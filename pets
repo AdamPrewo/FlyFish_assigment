@@ -1,9 +1,0 @@
-const superagent = require('superagent')
-
-async function getDogs() {
-    return response = await superagent.get('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
-    //console.log(response)
-}
-
-//getDogs().then((data) => console.log(JSON.parse(data._body[0])))
-getDogs().then((data) => console.log(data._body[1]))
